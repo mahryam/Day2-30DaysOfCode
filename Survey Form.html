@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta http-equiv="x-UA-Compatible" content="ie-edge">
+        <link rel="stylesheet" href="survey.css">
+        <title>XYZ COVID-19 SURVEY</title>
+        <style type="text/css">
+        		/*body{background-color:blue;}*/
+			html {
+			margin: 0;
+			padding: 0;
+		}
+		body {
+			font-size: 13pt;
+			background-color: #efefef;
+			padding: 10px;
+			margin: 0;
+		}
+		.head{
+			text-align: center;
+		}
+		h1 {
+			font-size: 25pt;
+			color: #1409469f;
+			text-align: center;
+			padding: 18px 0 18px 0;
+			margin: 0 0 10px 0;
+		}
+		h1 span {
+			border: 4px dashed #0c0333;
+			padding: 10px;
+		}
+		p {
+			padding: 0;
+			margin: 0;
+		}
+		#single{
+			margin: 0 0 10px 0;
+		}
+		fieldset{
+			padding: 30px;
+			border: 5px solid white;
+			border-radius: 30px;
+		}
+		
+		.section {
+			background-image:url(images/virus.jpg) ;
+			padding: 20px;
+			margin-bottom: 10px;
+			border-radius: 10px;
+		}
+		
+		form {
+			text-align: center;
+			margin-top: 0;
+		}
+		.submit {
+			background-color: #127027;
+			padding: 12px 45px;
+			border-radius: 5px;
+			cursor: pointer;
+			color: #ffffff;
+			border: none;
+			outline: none;
+			margin: 0;
+			font-weight: bold;
+		}
+		.submit:hover {
+			background-color: #2f3a11;
+		}
+		textarea {
+			height: 5pc;
+		}
+		input, textarea {
+			margin-bottom: 5px;
+			font-size: 11pt;
+			padding: 15px 10px 10px;
+			border: 1px solid #114a64;
+			background-color: #efefef;
+			color: #787575;
+			border-radius: 5px;
+			width: 70%;
+			outline: none;
+		}
+		
+		
+		@media all(max-device-width:400px){
+	
+	body{
+	background-color:white;
+		width:60%;
+		height:70%;
+	}
+} 
+	  .section{
+		  font-family:monospace;
+		  font-size:20px;
+	  }
+	  .end{
+		  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+		  font-size:18px;
+		  color: #300a0a;
+	  }
+	  .end p{
+	  	text-align: center;
+	  }
+        </style>
+    </head>
+    <body>
+        <header style="font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">
+        <h1>XYZ Estate COVID-19 Survey Form</h1>
+        <center>
+        <p>This survey is aimed at taking responses from the Residents of XYZ Estate on COVID-19</p></center>
+        </header>
+        <fieldset id="single">
+                    <main>
+                            <!--Form section-->
+                            <div class="section">
+                                        <form>
+                                                <p>Name<br>
+                                                    <input name="Name" type="name" required><br></p>
+                                                    <p>Email Address<br>
+                                                        <input name="Email Address" type="email" />
+                                                    </p>
+                                                    <p>Age<br>
+                                                        <input name="age" type="number" />
+                                                    </p>
+                                                    <p>Have you had contact with anyone who had shown symptoms of COVID-19?</p>
+                                                    <textarea name="response"></textarea>
+                                                    <p>If yes, have you taken any preventive measures?</p>
+                                                    <p>Has it affected you economically? If yes, explain.</p>
+                                                    <textarea name="response"></textarea>
+                                                    <p>Additional thoughts or feedbacks?</p>
+													<textarea name="response"></textarea><br>
+													<!--Submit-->
+													<div class="submit">
+                                                    <input type="submit" value="Submit" /></div>
+                                        </form>
+                                <!--Form section end-->
+                            </div>
+                        </main>
+        </fieldset>
+        <footer class="end">
+            <p>&copy;Survey by Law_Dev</p>
+        </footer>
+    </body>
+</html>
