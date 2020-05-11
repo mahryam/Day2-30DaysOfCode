@@ -1,2 +1,3 @@
 # Survey-Form
-https://mahryam.github.io/Survey-Form/Survey%20Form.html
+
+https://mahryam.github.io/Day2-30DaysOfCode/Survey%20Form.html
